@@ -1,0 +1,39 @@
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  padding: 5rem 8.125rem;
+  border-radius: 0.875rem;
+
+  & .main-container {
+    max-width: 51.25rem;
+    background-color: var(--shape-body);
+  }
+}
+
+aside {
+  padding: 2rem;
+  margin: 1.25rem;
+  border-radius: 0.875rem;
+
+  & .aside-container {
+    max-width: 25rem;
+
+    & h1 {
+      color: var(--pink);
+      font: var(--text-logo);
+      margin-top: 1rem;
+    }
+
+    & p {
+      color: var(--text-heading);
+      font: var(--text-heading-sm);
+      margin-top: 0.25rem;
+    }
+  }
+}
